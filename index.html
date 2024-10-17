@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/mym.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <title>MyM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1KTJ0pt8KZlPi4" crossorigin="anonymous">
+
+    <title>MYM MODA Y DECO</title>
 </head>
 <body>
-    <header id="home">
-        <img id="label" src="img/mym.png">
-        <nav id="nav" name="nav">
+    
+    <header id="home" >
         
+        <img id="label" src="img/mym.png">
+            <button class="hamburger-menu" id="hamburger-menu">
+                &#9776; <!-- Este símbolo es el ícono del menú hamburguesa -->
+            </button>
+            <nav id="nav" class="nav-links">
             <a href="index.html">Inicio</a> 
-            <a href="productos.html" target="_self">Productos</a>
-            <a href="contacto.html" target="_self">Contacto</a>
-            <a href="carrito.html" target="_self">Carrito</a>
+            <a href="pages/productos.html" target="_self">Productos</a>
+            <a href="pages/contacto.html" target="_self">Contacto</a>
+            <a href="pages/carrito.html" target="_self" >Carrito</a>
         </nav>
         <h1 id="brand">Moda y Deco</h1>
         <p id="presentation">M y M es una tienda física en el partido de San Martín y es además esta tienda online</p>
+        
+        
     </header>
     
-    <main>
-        <header>
-            
-        </header>
+    <main id="productsHome">
        
-        <p>Mas informacion <a href="">aqui</a></p>
+        <h2 >PRODUCTOS</h2>
+      
+       <section>
+
+        </section>
+        <p>Mas informacion <a href="pages/productos.html">aqui</a></p>
         <section>
-            <h3>Video con Subtítulos</h3>
-            <video controls width="600">
+            
+            <video autoplay loop muted >
                 <source src="videos/🎨 Cómo Dibujar a Goku SSJ Dios Rojo Fácil Paso a Paso .mp4" type="video/mp4">
                 <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
                 Tu navegador no soporta la etiqueta de video.
@@ -36,27 +48,12 @@
         
 
         </section>
-        <section>
-
-        </section>
-        <footer>
-
-        </footer>
-    </main>
-    <section>
-        <p>Pagos</p>
-    </section>
-    <section id="address">
-        <p>Como llegar
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1806711728923!2d-58.535663923477635!3d-34.574294755946255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb773179cc9df%3A0x87ae157c25055c05!2sBelgrano%203242%2C%20B1650%20San%20Mart%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727890437737!5m2!1ses!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <video src="" width="200"></video>
-        </p>
-    </section>
-    <section>
-        <h2>
+        
+        <section id="formHome">
+        <h2 >
             <p id="contact">Contactanos</p>
         </h2>
-        <form action="formulario.php" method="POST" >
+        <form action="https://formspree.io/f/xdkonwqr" method="POST" >
             <label for="nombre">Nombre</label>
             <input name="nombre" value="" id="nombre" type="text" placeholder="Escribí tu nombre">
             <label for="apellido">Apellido</label>
@@ -72,19 +69,30 @@
            
         </form>
     </section>
+    </main>
+       
+    
     <footer>
-        <div id="contactFoot">
-            <ul>
-            <li>logo de insta logo de tiktok</li>
-        
-            <li>mymmodaydeco@gmail.com</li>
-            <li>1142112895</li>
-            <li>BELGRANO 3242, San Martin,Buenos Aires.</li>
-            <li>Botón de arrepentimiento</li>
-        </ul>
+        <div class="footer-container">
+            <div class="paymentWays">
+                <ul>
+                    <li><a href="https://www.mercadopago.com.ar" alt="mercado pago">Mercado Pago</a></li>
+                </ul>
+            </div>
+            <div class="contactFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+                        <a href="https://www.facebook.com"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" /></a>
+                    </li>
+                    <li>mymmodaydeco@gmail.com</li>
+                    <li>1142112895</li>
+                    <li>BELGRANO 3242, San Martin,Buenos Aires.</li>
+                    <li>Botón de arrepentimiento</li>
+                </ul>
+            </div>
         </div>
-        
-
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

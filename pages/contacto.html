@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="labelPages">
+            <img id="label" src="../img/mym.png" alt="Logo">
+            
+            <!-- Ícono de menú hamburguesa -->
+            <button class="hamburger-menu" id="hamburger-menu">
+                &#9776; <!-- Símbolo de menú (puedes reemplazar con un ícono SVG) -->
+            </button>
+            
+            <nav id="nav" class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html" target="_self">Productos</a>
+                <a href="contacto.html" target="_self">Contacto</a>
+                <a href="carrito.html" target="_self">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+    
+        <h2 >CONTACTANOS</h2>
+<section id="formHome">
+    <form action="formulario.php" method="POST" >
+        <label for="nombre">Nombre</label>
+        <input name="nombre" value="" id="nombre" type="text" placeholder="Escribí tu nombre">
+        <label for="apellido">Apellido</label>
+        <input  name="apellido" id="apellido" type="text">   
+        <label for="telefono">Telefono</label>
+        <input  name="telefono" id="telefono" type="text" >
+        <label for="email">E-mail</label>
+        <input name="email" id="email" type="email" >
+        <label for="textarea" class="form-label">Mensaje</label>
+        <textarea class="form-control" name="textarea" id="textarea" cols="40" rows="20"></textarea>
+        <input type="submit" value="Enviar" >
+        <input type="reset" value="Borrar" >
+     </form>
+</section>
+   
+     </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="paymentWays">
+                <ul>
+                    <li><a href="https://www.mercadopago.com.ar" alt="mercado pago">Mercado Pago</a></li>
+                </ul>
+            </div>
+            <div class="contactFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+                        <a href="https://www.facebook.com"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" /></a>
+                    </li>
+                    <li>mymmodaydeco@gmail.com</li>
+                    <li>1142112895</li>
+                    <li>BELGRANO 3242, San Martin,Buenos Aires.</li>
+                    <li>Botón de arrepentimiento</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

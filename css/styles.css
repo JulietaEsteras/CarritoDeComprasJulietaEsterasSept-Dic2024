@@ -3,23 +3,233 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-} 
+}
+header.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para que el header siempre esté por encima del contenido */
+    background-color: #fff; /* Color de fondo del header */
+     /* Ajusta el padding para que el contenido no quede muy pegado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+main {
+    margin-top: 190px; /* Ajusta este valor según la altura real de tu header */
+    padding: 0;
+}
+
+section.main {
+    padding: 0px;
+    background-color: #f9f9f9;
+}
+
+h2{
+    color: #f8f9fa;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+#productsHome{
+    margin-top: 0px;
+}
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../img/pexels-fotios-photos-1090638.jpg') center/cover no-repeat;
+}
+a{
+    text-decoration: none;
+}
+
+/* Estilo del menú hamburguesa */
+.hamburger-menu {
+    display: none; /* No visible en pantallas grandes */
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Estilos para el menú de navegación */
+.nav-links {
+    display: flex; /* Mostrado en línea en pantallas grandes */
+    gap: 20px;
+    
+}
+
+
+/* Responsivo: para pantallas menores de 768px */
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #000000;
+            position: absolute;
+            bottom: 0; /* Se abre hacia arriba */
+            left: 0;
+            text-align: center;
+            z-index: 1;
+        }
+        .hamburger-menu {
+        display: block; /* Muestra el ícono de menú hamburguesa en pantallas pequeñas */
+    }
+
+        .nav-links.active {
+            display: flex;
+        }
+    
+        main {
+            margin-top: 70px; /* Margen inicial, ajusta si es necesario */
+        }
+    .nav-links.active ~ main {
+        margin-top: 300px; /* Aumenta el espacio cuando el menú está desplegado */
+    }
+    
+}
+    
+    
+    
+
+
+    
+
+.menu {
+    position: fixed;
+    width: 100%;  
+}
+
+
+/* Asegúrate de ajustar la ruta según donde esté tu imagen */
+#home {
+    background-image: url('../img/pexels-fotios-photos-1090638.jpg');  /* La ruta a tu imagen */
+    background-size: cover;  /* Esto hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    height: 100vh;  /* La sección ocupará toda la altura de la pantalla */
+    width: 100%;  /* La sección ocupará todo el ancho de la pantalla */
+    overflow: hidden; /* Evita que el contenido exceda el área del header */
+}
+
+header {
+    background-color: black;
+}
+
+
+
 #brand{
-    background-color: bisque;
-    color: #000000fc; /* Cambia el color del texto */
+    background-color: rgb(0, 0, 0);
+    color:#f8f9fa; /* Cambia el color del texto */
     font-size: 36px; /* Cambia el tamaño de la fuente */
     text-align: center; /* Alinea el texto al centro */
     text-transform: uppercase; /* Convierte el texto en mayúsculas */
     letter-spacing: 2px; /* Añade espacio entre las letras */
     margin-top: 20px; /* Espacio en la parte superior */
-    background-color: #f1f1f1; /* Añade un color de fondo */
     padding: 10px; 
 }
-/* Estilo básico para el header */
-header {
+.labelPages{
+    padding-bottom: 20px;
+    background-color: rgb(183, 175, 171);
+}
+/* Sección de Productos */
+.container {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si no caben */
+    justify-content: space-between; /* Distribuye el espacio entre las tarjetas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.container .tarjeta {
+    flex: 1 1 300px; /* Hace que cada tarjeta tenga un tamaño mínimo de 300px y se ajuste al ancho disponible */
+    max-width: 300px;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
     text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    section video {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+section video{
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center;     /* Centra el video verticalmente */
+    width: 100vw;            /* Ancho completo de la ventana */
+    height: 100vh;           /* Alto completo de la ventana */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;        /* Oculta cualquier contenido fuera del contenedor */
+}
+
+video {
+    width: 100vw;  /* Ancho completo de la pantalla */
+    height: 100vh; /* Alto completo de la pantalla */
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor sin perder proporción */
+}
+
+
+
+
+/* Ajustes responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+        max-width: none; /* Sin máximo de ancho */
+    }
+}
+
+ figure {
+    text-align: center; /* Centra la imagen y el pie de página */
+}
+
+figcaption {
+    font-style: italic; /* Texto en cursiva */
+    margin-top: 5px; /* Espacio entre la imagen y el pie de página */
+    color: #555; /* Color del texto */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten y hagan un wrap en pantallas más pequeñas */
+    justify-content: space-around; /* Distribuye las tarjetas con espacio alrededor */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    flex: 1 1 250px; /* Se ajusta a un tamaño mínimo de 250px y crece según el ancho disponible */
+    max-width: 250px; /* Máximo ancho de la tarjeta */
+    border: 1px solid #ddd; /* Bordes opcionales */
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+.card img {
+    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Hace que la imagen se ajuste sin perder proporción */
+    display: block; /* Asegura que la imagen sea un bloque y no tenga márgenes extra */
+    border-radius: 8px; /* Bordes redondeados, opcional */
+} 
+.buttonP{
+    padding: 10px 20px; background-color: #000000; color: white; border: none; border-radius: 5px; cursor: pointer;
 }
 
 /* Imagen de logo */
@@ -27,8 +237,9 @@ header {
     width: 150px;
     margin-bottom: 10px;
     margin-top: 30px;
+   
 }
-aside{
+/*aside{
     width: 350px;
     height: 900px;
     margin-bottom: 10px;
@@ -36,35 +247,37 @@ aside{
     background-color:bisque ;
     text-align: center;
     padding: 10px 20px 20px 10px;
-}
+}*/
 ul li{
-    list-style-type: none; /* Elimina los puntos */
+    list-style-type: none; 
     padding-left: 0; 
 }
 li{
     padding: 60px;
 }
-#h2p{
+#h2p {
     text-align: center;
-    padding: 10px 20px 20px 10px;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white; /* Asegurar que el texto sea visible sobre el fondo negro */
 }
 
-/* Estilo para el menú de navegación */
+/* Estilo para el menú de navegación 
 nav {
     display: flex;
-    justify-content: flex-end; /* Alinea el menú a la derecha */
+    justify-content: flex-end; 
     position: fixed;
     top: 0;
-    background-color: #eaeaea;
+    background-color: #000000;
     padding: 10px 20px 20px 10px;
     width: 100%; 
     z-index: 1000; 
     text-transform: uppercase;
-}
+}*/
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #f8f9fa;
     margin-left: 15px;
     margin-right: 15px;
     font-weight: bold;
@@ -79,7 +292,7 @@ nav a:hover {
     font-size: 16px; /* Cambia el tamaño de la fuente */
     font-family: 'Arial', sans-serif; /* Cambia el tipo de letra */
     text-align: center; /* Alinea el texto al centro */
-    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    
     letter-spacing: 2px; /* Añade espacio entre las letras */
     margin-top: 20px; /* Espacio en la parte superior */
     background-color: #f1f1f1; /* Añade un color de fondo */
@@ -87,19 +300,23 @@ nav a:hover {
 }
 #address{
     background-color: antiquewhite;
+
 }
-#contactFoot{
-    text-align: center;
-    padding: 0px;
-    margin-inline: 0px;
-}
+
 /* Estilos para el formulario */
+#formHome {
+    background-color:#b8b1a9 ;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 form {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacio entre los inputs */
     max-width: 400px;
     margin: 20px auto;
+    
 }
 
 input, textarea {
@@ -123,6 +340,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 #contact{
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 /* Responsividad */
@@ -136,7 +354,80 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     }
 }
 /* Estilo para el Footer */
-#liFootRedes{
-    display: flex;
-    justify-content: flex-end;
+@media (max-width: 768px) {
+    #liFootRedes {
+        justify-content: center; /* Centra el contenido en pantallas pequeñas */
+    }
 }
+footer {
+    background-color: #000000; /* Color de fondo del footer */
+    padding: 30px 90px; /* Espaciado interno */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido a los extremos */
+    align-items: center; /* Alinea verticalmente en el centro */
+}
+
+.paymentWays {
+    flex: 1; /* Ocupa un espacio flexible a la izquierda */
+    text-align: left;
+    background-color: black;
+    
+}
+.paymentWays a{
+    color: #f8f9fa;
+}
+.contactFoot {
+    flex: 1; /* Ocupa un espacio flexible a la derecha */
+    text-align: right;
+}
+
+.contactFoot ul, .paymentWays ul {
+    list-style-type: none; /* Sin bullets en las listas */
+    margin: 0;
+    padding: 0;
+}
+
+.contactFoot li, .paymentWays li {
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+}
+
+.contactFoot img, .paymentWays img {
+    width: 24px; /* Tamaño de los iconos de redes sociales */
+    margin-right: 10px;
+}
+
+.contactFoot {
+    text-align: right; /* Alinea el contenido al borde derecho */
+    padding: 0; /* Elimina padding extra */
+    margin: 0; /* Elimina márgenes extra */
+    background-color: black;
+    color: #f8f9fa;
+}
+
+.contactFoot ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.contactFoot li {
+    padding: 5px 0; /* Controla el espacio entre los elementos */
+    margin: 0;
+}
+
+.contactFoot li a img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px;
+    margin-left: 5px; /* Espacio entre los íconos */
+    vertical-align: middle; /* Alinea los íconos con el texto si es necesario */
+}
+
+/* Elimina cualquier margen o padding en los enlaces de los íconos */
+.contactFoot li a {
+    margin: 0;
+    padding: 0;
+}
+
