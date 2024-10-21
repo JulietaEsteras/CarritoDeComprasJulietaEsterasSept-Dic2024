@@ -12,3 +12,4 @@ document.getElementById("hamburger-menu").addEventListener("click", function() {
         mainContent.style.marginTop = "150px";  // El margen cuando el menú está oculto
     }
 });
+console.log("Hola Mundo!");

@@ -13,43 +13,102 @@
 <body>
     
     <header id="home" >
-        
+        <section id="navigation">
         <img id="label" src="img/mym.png">
             <button class="hamburger-menu" id="hamburger-menu">
                 &#9776; <!-- Este símbolo es el ícono del menú hamburguesa -->
             </button>
             <nav id="nav" class="nav-links">
             <a href="index.html">Inicio</a> 
-            <a href="pages/productos.html" target="_self">Productos</a>
-            <a href="pages/contacto.html" target="_self">Contacto</a>
-            <a href="pages/carrito.html" target="_self" >Carrito</a>
+            <a href="#products" target="_self">Productos</a>
+            <a href="#formHome" target="_self">Contacto</a>
+            <a href="#buy" target="_self" >Carrito</a>
         </nav>
+       </section>
+       <section id="ph">
         <h1 id="brand">Moda y Deco</h1>
         <p id="presentation">M y M es una tienda física en el partido de San Martín y es además esta tienda online</p>
-        
+       </section>
         
     </header>
     
     <main id="productsHome">
        
-        <h2 >PRODUCTOS</h2>
-      
-       <section>
-
+        <section class="main" id="products">
+            <h2  >PRODUCTOS</h2>
+        <div class="container">
+              <!-- Content here -->
+           
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/pexels-photo-1248583.jpeg" alt="foto de sillón con almohadones">
+                    <figcaption>Almohadón Cactus</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/free-photo-of-a-table-in-a-room.jpeg" alt="sillas deco">
+                    <figcaption>Sillas Caterina</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/pexels-lorraine-forever-blooms-280498-834694.jpg" alt="sillas deco">
+                    <figcaption>Florero Crystal</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/mantaSnow.webp" alt="foto de sillón con manta">
+                    <figcaption>Manta Snow</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/pexels-photo-1008692.jpeg" alt="foto de mesa con camino de mesa">
+                    <figcaption>Camino Leaves</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+            <div class="card" >
+                <figure>
+                    <img class="fotosP" src="../img/pexels-photo-14320923.webp" alt="foto de piezas de cerámica">
+                    <figcaption>Juego de cerámica Grey</figcaption>
+                </figure>
+                <button class="buttonP">
+                    Comprar
+                </button>
+            </div>
+        </div>
         </section>
-        <p>Mas informacion <a href="pages/productos.html">aqui</a></p>
-        <section>
-            
+        <section class="main" >
+            <h2>TUS COMPRAS<h2>     
+        </section>
+        
+        <!-- <p>Mas informacion <a href="pages/productos.html">aqui</a></p> -->
+        <section class="main"> 
             <video autoplay loop muted >
                 <source src="videos/🎨 Cómo Dibujar a Goku SSJ Dios Rojo Fácil Paso a Paso .mp4" type="video/mp4">
                 <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
                 Tu navegador no soporta la etiqueta de video.
             </video>
-        
-
         </section>
         
-        <section id="formHome">
+        <section class="main" id="formHome">
         <h2 >
             <p id="contact">Contactanos</p>
         </h2>
@@ -76,7 +135,7 @@
         <div class="footer-container">
             <div class="paymentWays">
                 <ul>
-                    <li><a href="https://www.mercadopago.com.ar" alt="mercado pago">Mercado Pago</a></li>
+                    <li><a href="https://www.mercadopago.com.ar" alt="mercado pago" >Mercado Pago</a></li>
                 </ul>
             </div>
             <div class="contactFoot">
