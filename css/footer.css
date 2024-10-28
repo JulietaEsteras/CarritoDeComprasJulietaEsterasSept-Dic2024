@@ -1,0 +1,97 @@
+/* Estilo para el Footer */
+#presentation{
+    color: #000000fc; /* Cambia el color del texto */
+    font-size: 16px; /* Cambia el tamaño de la fuente */
+    
+    text-align: center; /* Alinea el texto al centro */
+    
+    letter-spacing: 2px; /* Añade espacio entre las letras */
+    margin-top: 20px; /* Espacio en la parte superior */
+    background-color: #f1f1f1; /* Añade un color de fondo */
+    padding: 10px; 
+}
+
+footer {
+    background-color: #000000; 
+    padding: 30px 90px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.paymentWays {
+    flex: 1; 
+    text-align: left;
+    background-color: black;
+    
+}
+
+.paymentWays a{
+    color: #f8f9fa;
+}
+
+.contactFoot {
+    flex: 1; 
+    text-align: right;
+}
+
+.contactFoot ul, .paymentWays ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.contactFoot li, .paymentWays li {
+    margin-bottom: 10px; 
+}
+
+.contactFoot img, .paymentWays img {
+    width: 24px; 
+    margin-right: 10px;
+}
+
+.contactFoot {
+    text-align: right; 
+    padding: 0; 
+    margin: 0;
+    background-color: black;
+    color: #f8f9fa;
+}
+
+.contactFoot ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.contactFoot li {
+    padding: 5px 0; 
+    margin: 0;
+}
+
+.contactFoot li a img {
+    width: 30px; 
+    height: 30px;
+    margin-left: 5px; 
+    vertical-align: middle; 
+}
+
+.contactFoot li a {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .contactFoot ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    .paymentWays a{
+        display: flex ;
+        text-align: center;
+        text-decoration: none;
+    }
+}
