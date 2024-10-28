@@ -1,13 +1,11 @@
-/* Estilo para el Footer */
+/* FOOTER */
 #presentation{
-    color: #000000fc; /* Cambia el color del texto */
-    font-size: 16px; /* Cambia el tamaño de la fuente */
-    
-    text-align: center; /* Alinea el texto al centro */
-    
-    letter-spacing: 2px; /* Añade espacio entre las letras */
-    margin-top: 20px; /* Espacio en la parte superior */
-    background-color: #f1f1f1; /* Añade un color de fondo */
+    color: #000000fc; 
+    font-size: 16px; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    margin-top: 20px; 
+    background-color: #f1f1f1; 
     padding: 10px; 
 }
 

@@ -7,7 +7,7 @@
     font-style: normal; 
 }
 
-/* sections en el main*/
+/* SECCIONES EN EL MAIN*/
 h2 {
     color: #f8f9fa;
     background-color: black;
@@ -23,7 +23,7 @@ h3{
     text-transform: uppercase;
     margin-left: 15px ;
 }
-/*Seccion productos video reseñas formulario*/
+/*SECCION PRODUCTOS-VIDEO-RESEÑAS-FORMULARIO*/
 section .main {
     scroll-margin-top: 80px; 
 } 
@@ -109,7 +109,7 @@ section .main {
     .search-btn svg {
         width: 20px;
         height: 20px;
-        fill: #000; /* Color del ícono */
+        fill: #000; 
     }
 }
 .container {
@@ -124,32 +124,32 @@ section .main {
     }
 }
 figure {
-    text-align: center; /* Centra la imagen y el pie de página */
+    text-align: center; 
 }
 
 figcaption {
-    font-style: italic; /* Texto en cursiva */
-    margin-top: 5px; /* Espacio entre la imagen y el pie de página */
-    color: #555; /* Color del texto */
+    font-style: italic; 
+    margin-top: 5px; 
+    color: #555; 
 }
 
 .container {
-    display: flex; /* Activa Flexbox */
-    flex-wrap: wrap; /* Permite que los elementos hagan wrap a la siguiente línea cuando no hay suficiente espacio */
-    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
-    gap: 20px; /* Espacio entre los elementos (similar a `gap` en Grid) */
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: space-around; 
+    gap: 20px; 
 }
 
 .card {
-    flex: 1 1 400px; /* Se ajusta a un tamaño mínimo de 250px y crece según el ancho disponible */
-    max-width: 400px; /* Máximo ancho de la tarjeta */
-    border: 1px solid #ddd; /* Bordes opcionales */
+    flex: 1 1 400px; 
+    max-width: 400px; 
+    border: 1px solid #ddd; 
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #fff; /* Fondo blanco para las tarjetas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
     
 }
 figcaption{
@@ -161,11 +161,11 @@ figcaption{
 }
 
 .card img {
-    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor */
-    height: 300px; /* Altura fija */
-    object-fit: cover; /* Hace que la imagen se ajuste sin perder proporción */
-    display: block; /* Asegura que la imagen sea un bloque y no tenga márgenes extra */
-    border-radius: 8px; /* Bordes redondeados, opcional */
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 8px; 
 } 
 .buttonP{
     margin-top: 15px;
@@ -179,12 +179,12 @@ figcaption{
 }
 @media (max-width: 768px) {
     .card {
-        flex: 1 1 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
-        max-width: none; /* Sin máximo de ancho */
+        flex: 1 1 100%; 
+        max-width: none; 
     }
 }
 
-/*Seccion video*/
+/*VIDEO*/
 section video{
     display: flex;
     justify-content: center; 
@@ -200,7 +200,7 @@ video {
     height: 100vh; 
     object-fit: cover; 
 }
-/* Video para pantallas pequeñas */
+/* RESPONSIVO VIDEO */
 @media (max-width: 768px){
     section video{
         display: flex;
@@ -219,7 +219,8 @@ video {
         object-fit: cover; 
     }
 }
-/*Estilos seccion reseñas
+/*RESEÑAS
+
 .reviews {
     max-width: 1200%; 
     margin: 0 auto; 
@@ -304,7 +305,7 @@ video {
     background-color: #2980b9; 
 }
 
-/* Estilos para el formulario */
+/* FORMULARIO */
 #formHome {
     background-color:#b8b1a9 ;
     padding-bottom: 20px;
@@ -342,9 +343,14 @@ input[type="submit"]:hover{
     
 }
 
-/*Seccion ubicacion*/
+/*UBICACION*/
 iframe {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+@media (max-width: 768px) {
+iframe {
+    width: 100%; 
+}
 }

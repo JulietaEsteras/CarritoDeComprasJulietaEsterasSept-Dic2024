@@ -1,4 +1,4 @@
-// Menu hamburguesa
+// MENU HAMBURGUESA
 document.getElementById("hamburger-menu").addEventListener("click", function() {
     var navLinks = document.getElementById("nav");
     var mainContent = document.querySelector("main");
@@ -16,7 +16,7 @@ document.getElementById("hamburger-menu").addEventListener("click", function() {
 
 console.log("Hola Profe!");
 
-// Buscador
+// BUSCADOR
 document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
