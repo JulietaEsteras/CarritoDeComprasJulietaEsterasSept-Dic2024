@@ -1,32 +1,34 @@
+// Menu hamburguesa
 document.getElementById("hamburger-menu").addEventListener("click", function() {
     var navLinks = document.getElementById("nav");
     var mainContent = document.querySelector("main");
     
-    // Alterna la clase active para mostrar/ocultar el menú
+   
     navLinks.classList.toggle("active");
     
-    // Si el menú está activo, ajusta el margen superior de main
+    
     if (navLinks.classList.contains("active")) {
-        mainContent.style.marginTop = navLinks.offsetHeight + "px"; // Ajusta según el tamaño del menú dinámicamente
+        mainContent.style.marginTop = navLinks.offsetHeight + "px"; 
     } else {
-        mainContent.style.marginTop = "70px";  // El margen cuando el menú está oculto
+        mainContent.style.marginTop = "180px";  
     }
 });
 
-console.log("Hola Mundo!");
+console.log("Hola Profe!");
 
+// Buscador
 document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que se recargue la página
+    event.preventDefault(); 
 
     const searchTerm = document.getElementById('searchInput').value.toLowerCase(); // Captura el texto del input
 
-    // Filtrar los productos que coincidan con el término de búsqueda
+    
     const productos = [
-        { id: 1, nombre: 'Almohadon cactus', descripcion: 'Almohadón suave y cómodo.', precio: 5000 },
+        { id: 1, nombre: 'Almohadon Cactus', descripcion: 'Almohadón suave y cómodo.', precio: 5000 },
         { id: 2, nombre: 'Sillas Caterina', descripcion: 'Juego de sillas x4.', precio: 520000 },
-        { id: 3, nombre: 'Juego de ceramica grey', descripcion: 'Juego de ceramica elegante x6.', precio: 85000 },
+        { id: 3, nombre: 'Juego de ceramica Grey', descripcion: 'Juego de ceramica elegante x6.', precio: 85000 },
         { id: 4, nombre: 'Manta Snow', descripcion: 'Manta de algodon.', precio: 17500 },
-        { id: 5, nombre: 'Florero Cristal', descripcion: 'Florero 15 x35 cm.', precio: 17500 },
+        { id: 5, nombre: 'Florero Crystal', descripcion: 'Florero 15 x35 cm.', precio: 17500 },
         { id: 6, nombre: 'Camino Leaves', descripcion: 'Camino de algodón egipcio 180 cm.', precio: 17500 }
     ];
 

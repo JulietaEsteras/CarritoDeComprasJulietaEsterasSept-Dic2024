@@ -55,8 +55,7 @@ Acceso al proyecto 🔗
 
 Autoría 👩
 
-Esta página fue diseñada y desarrollada por Vanina Denegri.
-
+Esta página fue diseñada y desarrollada por Julieta Esteras
 Reconocimientos 👑
 
 Imágenes de uso libre:
