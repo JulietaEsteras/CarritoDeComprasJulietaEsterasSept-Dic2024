@@ -73,6 +73,7 @@ section .main {
     align-items: center;
     
 }
+/* RESPONSIVO NAV DE PRODUCTOS*/
 @media (max-width: 768px) {
     #navProducts {
         display: flex;
@@ -112,15 +113,21 @@ section .main {
         fill: #000; 
     }
 }
+/*DIV DE TARJETAS PRODUCTOS*/
 .container {
     margin-top: 0;
 }
 .container {
     padding: 0 200px; 
 }
+/*RESPONSIVO TARJETAS*/
 @media (max-width: 768px) {
     .container {
         padding: 0 ;
+    }
+    .card {
+        flex: 1 1 100%; 
+        max-width: none; 
     }
 }
 figure {
@@ -177,13 +184,6 @@ figcaption{
     border-radius: 5px; 
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .card {
-        flex: 1 1 100%; 
-        max-width: none; 
-    }
-}
-
 /*VIDEO*/
 section video{
     display: flex;
@@ -212,7 +212,6 @@ video {
         padding: 0;
         overflow: hidden;        
     }
-    
     video {
         width: 100%;  
         height: 100%; 
