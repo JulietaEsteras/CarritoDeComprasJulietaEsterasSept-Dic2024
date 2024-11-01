@@ -16,6 +16,7 @@
 @media (max-width: 768px) {
     nav {
         justify-content: center; 
+        margin-top: 0;
     }
     
 }
@@ -41,24 +42,14 @@
     }
     
     main {
-        margin-top: 70px; /* Margen inicial, ajusta si es necesario */
+        margin-top: 0; /* Margen inicial, ajusta si es necesario */
     }
     .nav-links.active ~ main {
-        margin-top: 300px; /* Aumenta el espacio cuando el menú está desplegado */
+        margin-top: 0; /* Aumenta el espacio cuando el menú está desplegado */
     }
-    .menu {
-        position: fixed;
-        width: 100%;  
-}
+    
 }  
-header menu{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #fff; 
-     
-} 
+
 /* HEADER INDEX.HTML*/
 #home {
     background-size: cover;  
@@ -85,11 +76,17 @@ header menu{
 /*SECCION DE MENU NAVEGACION*/
 #navigation{
     padding-bottom: 20px;
-    margin-top: 0;
+    margin: 0;
     position: fixed;
     background-color: #b8b1a9;
     width: 100%;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3); /* Sombra opcional */
+}
+@media (max-width: 768px) {
+    #navigation{
+        margin: 0;
+        padding: 0;
+    }
 }
 #label {
     width: 150px;

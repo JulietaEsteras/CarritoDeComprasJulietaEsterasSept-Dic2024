@@ -86,11 +86,19 @@ footer {
     .contactFoot ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
+        text-align: center; 
     }
     .paymentWays a{
         display: flex ;
+        justify-content: center;
         text-align: center;
         text-decoration: none;
+    }
+    .footer-container {
+        display: flex ;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
     }
 }
