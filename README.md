@@ -13,4 +13,4 @@ El proyecto consite en la creación de una página web con un carrito de compras
 
 https://github.com/JulietaEsteras/CarritoDeComprasJulietaEsterasSept-Dic2024/tree/onePage
 
-Proyecto realizado por Julieta esteras
+Proyecto realizado por Julieta Esteras

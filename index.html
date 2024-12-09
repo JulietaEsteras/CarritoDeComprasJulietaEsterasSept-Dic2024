@@ -10,10 +10,11 @@
     <link class="roboto-thin" href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
     <!-- font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="../css/footer.css">
-
+   
     <title>MYM MODA Y DECO</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             <button class="hamburger-menu" id="hamburger-menu">
                 &#9776; 
             </button>
-            <nav id="nav" class="nav-links">
+            <nav id="nav" class="navbar navbar-expand-lg">
             <i class="fa fa-home" aria-hidden="true"></i> <a href="#home">Inicio</a> 
             <a href="#products" target="_self">Productos</a>
             <a href="#tendencies" target="_self">Tendencias</a>
@@ -36,7 +37,7 @@
        <section id="ph">
         <h1 id="brand">Moda & Deco</h1>
         <h3 id="welcome">Bienvenidos a M&M! <br>
-            Te invitamos a descubrir un mundo de estilo, elegancia y creatividad. Nuestra colección está diseñada para transformar cada aspecto de tu vida.</h3>
+            Te invitamos a descubrir un mundo de estilo, elegancia y creatividad. </h3>
        </section>
         
     </header>
@@ -66,9 +67,13 @@
             </nav>
             <section id="resultadosBusqueda"></section>
 
-
-        <div class="container">         
-            <div class="card" >
+            <div id="buttonsD">
+                <button class="buttonP" id="btnTodos">Mostrar Todos</button>
+                <button class="buttonP" id="btnDescuento">Con Descuento</button>
+                <button class="buttonP" id="btnSinDescuento">Sin Descuento</button>
+            </div>
+        <div class="container" id="container">         
+            <!-- <div class="card" >
                 <figure id="producto">
                     <img class="fotosP" src="../img/pexels-photo-1248583.jpeg" alt="foto de sillón con almohadones">
                     <figcaption>Almohadón Cactus</figcaption>
@@ -121,8 +126,8 @@
                 <button class="buttonP">
                     Agregar al carrito
                 </button>
-            </div>
-        </div>
+            </div>-->
+        </div>  
         </section>
         
         <!-- <p>Mas informacion <a href="pages/decoracion.html">aqui</a></p> -->

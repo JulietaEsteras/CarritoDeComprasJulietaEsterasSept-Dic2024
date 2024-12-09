@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Almohadón Cactus",
+        "imagen": "../img/pexels-photo-1248583.jpeg",
+        "descripcion": "Almohadón con diseño de cactus.",
+        "precio": 11000,
+        "descuento": 0
+    },
+    {
+        "id": 2,
+        "nombre": "Sillas Caterina",
+        "imagen": "../img/free-photo-of-a-table-in-a-room.jpeg",
+        "descripcion": "Sillas elegantes para comedor.",
+        "precio": 220000,
+        "descuento": 0
+    },
+    {
+        "id": 3,
+        "nombre": "Florero Crystal",
+        "imagen": "../img/pexels-lorraine-forever-blooms-280498-834694.jpg",
+        "descripcion": "Florero de vidrio cristalino.",
+        "precio": 15000,
+        "descuento": 10
+    },
+    {
+        "id": 4,
+        "nombre": "Manta Snow",
+        "imagen": "../img/mantaSnow.webp",
+        "descripcion": "Manta suave para tu sillón.",
+        "precio": 25000,
+        "descuento": 20
+    },
+    {
+        "id": 5,
+        "nombre": "Camino Leaves",
+        "imagen": "../img/pexels-photo-1008692.jpeg",
+        "descripcion": "Camino de mesa con hojas decorativas.",
+        "precio": 18000,
+        "descuento": 0
+    },
+    {
+        "id": 6,
+        "nombre": "Juego de cerámica Grey",
+        "imagen": "../img/pexels-photo-14320923.webp",
+        "descripcion": "Juego de cerámica 6 pzs.",
+        "precio": 180000,
+        "descuento": 10
+    },
+    {
+        "id": 6,
+        "nombre": "Lámparas Globe",
+        "imagen": "../img/pexels-photo-568948.jpeg",
+        "descripcion": "Lámparas caladas rojas.",
+        "precio": 30000,
+        "descuento": 0
+    },
+    {
+        "id": 6,
+        "nombre": "Espejo Indian",
+        "imagen": "../img/pexels-photo-5865685.jpeg",
+        "descripcion": "Espejo estilo indú.",
+        "precio": 280000,
+        "descuento": 0
+    },
+    {
+        "id": 6,
+        "nombre": "Porta macetas Stripes",
+        "imagen": "../img/pexels-photo-796620.webp",
+        "descripcion": "Porta macetas de cerámica.",
+        "precio": 150000,
+        "descuento": 20
+    }
+]
